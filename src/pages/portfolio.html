@@ -11,178 +11,210 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wdth,wght@75..100,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- лінк -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="../../index.html">Web<span>Studio</span></a>
-      <nav>
-        <ul>
-          <li><a href="../../index.html">Студіо</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+    <header class="header">
+      <a class="logo-contrast" href="../../index.html"
+        >Web<span class="logo">Studio</span></a
+      >
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Студіо</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <a class="contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contact-item">
+          <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </header>
-    <main>
-      <section>
-        <h1 hidden>Портфоліо</h1>
-        <div>
-          <ul>
-            <li><button type="button">Усі</button></li>
-            <li><button type="button">Веб-сайти</button></li>
-            <li><button type="button">Додатки</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+    <main class="header">
+      <section class="Portfolio">
+        <h1 class="gallery-title" hidden>Портфоліо</h1>
+        <div class="filter-div">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="filter-button" type="button">Усі</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Додатки</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Маркетинг</button>
+            </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>
-              <article>
-                <div>
+        <div class="gallery-div">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <article class="gallery-card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/technocrack.jpg"
                     alt="Веб-сайт"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Технокряк</h2>
-                  <p>Веб-сайт</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Технокряк</h2>
+                  <p class="card-category">Веб-сайт</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/orlean.jpg"
                     alt="Дизайн"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Постер New Orlean vs Golden Star</h2>
-                  <p>Дизайн</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card-category">Дизайн</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/seafood.jpg"
                     alt="Додаток"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Ресторан Seafood</h2>
-                  <p>Додаток</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Ресторан Seafood</h2>
+                  <p class="card-category">Додаток</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/prime.jpg"
                     alt="Маркетинг"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Проєкт Prime</h2>
-                  <p>Маркетинг</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Проєкт Prime</h2>
+                  <p class="card-category">Маркетинг</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/boxes.jpg"
                     alt="Додаток"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Проєкт Boxes</h2>
-                  <p>Додаток</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Проєкт Boxes</h2>
+                  <p class="card-category">Додаток</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/borders.jpg"
                     alt="Веб-сайт"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Inspiration has no Borders</h2>
-                  <p>Веб-сайт</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Inspiration has no Borders</h2>
+                  <p class="card-category">Веб-сайт</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/edition.jpg"
                     alt="Дизайн"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Видання Limited Edition</h2>
-                  <p>Дизайн</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Видання Limited Edition</h2>
+                  <p class="card-category">Дизайн</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/lab.jpg"
                     alt="Маркетинг"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Проєкт LAB</h2>
-                  <p>Маркетинг</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Проєкт LAB</h2>
+                  <p class="card-category">Маркетинг</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <div>
+            <li class="gallery-item">
+              <article class="card">
+                <div class="card-photo-div">
                   <img
+                    class="card-photo"
                     src="../img/business.jpg"
                     alt="Додаток"
                     width="370"
                     height="294"
                   />
                 </div>
-                <div>
-                  <h2>Growing Business</h2>
-                  <p>Додаток</p>
+                <div class="card-text-div">
+                  <h2 class="card-title">Growing Business</h2>
+                  <p class="card-category">Додаток</p>
                 </div>
               </article>
             </li>
@@ -190,12 +222,16 @@
         </div>
       </section>
     </main>
-    <footer>
-      <a href="#">Web<span>Studio</span></a>
-      <address>
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+    <footer class="footer">
+      <a class="logo-contrast" href="#"
+        >Web<span class="logo-white">Studio</span></a
+      >
+      <address class="address-list">
+        <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+        <a class="address-link" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
     </footer>
   </body>

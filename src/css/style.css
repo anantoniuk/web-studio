@@ -1,11 +1,146 @@
 :root {
   --colorTextPrimary: #212121;
-  --colorSecontText: #757575;
+  --colorSecondText: #757575;
   --accenTextColor: #2196f3;
   --backgroundDarkColorText: #2f303a;
   --backgroundColorText: #ffffff;
   --colorStroke: #ececec;
-  --logoColor: #0000;
+  --logoColor: #000000;
   --colorStrokeHeader: #f5f4fa;
   --colorTextInFooter: #ffffff99;
+  /* шрифти */
+  --textPrimary: "Roboto", serif;
+  --textLogo: "Raleway", serif;
+}
+body {
+  font-family: var(--textPrimary);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--colorTextPrimary);
+  line-height: 1.7;
+}
+/* лого */
+.logo-contrast {
+  font-family: var(--textLogo);
+  font-size: 26px;
+  color: var(--accenTextColor);
+  text-decoration: none;
+}
+.logo {
+  font-family: var(--textLogo);
+  font-size: 26px;
+  color: var(--logoColor);
+  text-decoration: none;
+}
+.logo-white {
+  color: var(--backgroundColorText);
+}
+/* nav */
+.nav-link {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--accenTextColor);
+}
+.contact-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  color: var(--colorSecondText);
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: var(--accenTextColor);
+}
+/* hero */
+.hero {
+  background-color: var(--backgroundDarkColorText);
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--backgroundColorText);
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-family: inherit;
+  color: var(--backgroundColorText);
+  font-size: 16;
+  border: none;
+  background-color: var(--accenTextColor);
+  padding: 10px 32px;
+  border-radius: 4px;
+}
+.hero-button:hover {
+  color: var(--accenTextColor);
+  border: 3px solid var(--accenTextColor);
+  background-color: var(--backgroundColorText);
+  cursor: pointer;
+}
+/* advantages */
+.advantages-title {
+  font-weight: 700;
+}
+.advantages-text {
+  color: var(--colorSecondText);
+}
+/* work */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+/* team */
+.team {
+  background-color: var(--colorStrokeHeader);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-role {
+  font-size: 16px;
+  color: var(--colorSecondText);
+}
+/* footer */
+.footer {
+  background-color: var(--backgroundDarkColorText);
+}
+.address {
+  color: var(--backgroundColorText);
+}
+.address-link {
+  color: var(--colorTextInFooter);
+  text-decoration: none;
+}
+/* Portfolio */
+.filter-button {
+  font-family: inherit;
+  color: inherit;
+  font-size: 16;
+  border: none;
+  background-color: var(--colorStrokeHeader);
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.filter-button:hover {
+  color: var(--backgroundColorText);
+  background-color: var(--accenTextColor);
+  cursor: pointer;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.card-category {
+  font-size: 16px;
+  color: var(--colorSecondText);
 }
