@@ -22,15 +22,19 @@ body {
 /* лого */
 .logo-contrast {
   font-family: var(--textLogo);
+  font-weight: 700;
   font-size: 26px;
   color: var(--accenTextColor);
   text-decoration: none;
+  line-height: 1.2;
 }
 .logo {
   font-family: var(--textLogo);
+  font-weight: 700;
   font-size: 26px;
   color: var(--logoColor);
   text-decoration: none;
+  line-height: 1.2;
 }
 .logo-white {
   color: var(--backgroundColorText);
@@ -42,6 +46,7 @@ body {
   color: inherit;
   font-weight: 500;
   text-decoration: none;
+  line-height: 1.14;
 }
 .nav-link:hover {
   color: var(--accenTextColor);
@@ -52,6 +57,7 @@ body {
   font-size: inherit;
   color: var(--colorSecondText);
   text-decoration: none;
+  line-height: 1.14;
 }
 .contact-link:hover {
   color: var(--accenTextColor);
@@ -75,6 +81,7 @@ body {
   background-color: var(--accenTextColor);
   padding: 10px 32px;
   border-radius: 4px;
+  line-height: 1.9;
 }
 .hero-button:hover {
   color: var(--accenTextColor);
@@ -85,6 +92,7 @@ body {
 /* advantages */
 .advantages-title {
   font-weight: 700;
+  line-height: 1.14;
 }
 .advantages-text {
   color: var(--colorSecondText);
@@ -101,12 +109,14 @@ body {
 .team-title {
   font-weight: 700;
   font-size: 36px;
+  line-height: 1.2;
 }
-.team-name {
+.teammate-name {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.2;
 }
-.team-role {
+.teammate-role {
   font-size: 16px;
   color: var(--colorSecondText);
 }
@@ -115,9 +125,11 @@ body {
   background-color: var(--backgroundDarkColorText);
 }
 .address {
+  font-style: normal;
   color: var(--backgroundColorText);
 }
 .address-link {
+  font-style: normal;
   color: var(--colorTextInFooter);
   text-decoration: none;
 }
@@ -130,17 +142,20 @@ body {
   background-color: var(--colorStrokeHeader);
   padding: 6px 22px;
   border-radius: 4px;
+  line-height: 1.6;
 }
 .filter-button:hover {
   color: var(--backgroundColorText);
   background-color: var(--accenTextColor);
   cursor: pointer;
 }
-.card-title {
+.project-title {
   font-weight: 700;
   font-size: 18px;
+  line-height: 2;
 }
-.card-category {
+.project-category {
   font-size: 16px;
   color: var(--colorSecondText);
+  line-height: 1.8;
 }
