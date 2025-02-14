@@ -18,6 +18,7 @@ body {
   font-size: 14px;
   color: var(--colorTextPrimary);
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 /* лого */
 .logo-contrast {
@@ -47,6 +48,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover {
   color: var(--accenTextColor);
@@ -58,6 +60,7 @@ body {
   color: var(--colorSecondText);
   text-decoration: none;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contact-link:hover {
   color: var(--accenTextColor);
@@ -73,6 +76,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.06em;
 }
 .hero-button {
   font-family: inherit;
@@ -83,6 +87,7 @@ body {
   padding: 10px 32px;
   border-radius: 4px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 .hero-button:hover {
   color: var(--accenTextColor);
@@ -146,6 +151,7 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   line-height: 1.6;
+  letter-spacing: inherit;
 }
 .filter-button:hover {
   color: var(--backgroundColorText);
@@ -156,6 +162,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .project-category {
   font-size: 16px;
