@@ -26,7 +26,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--accenTextColor);
-  text-decoration: none;
+
   line-height: 1.2;
 }
 .logo {
@@ -34,7 +34,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--logoColor);
-  text-decoration: none;
+
   line-height: 1.2;
 }
 .logo-white {
@@ -42,11 +42,10 @@ body {
 }
 /* nav */
 .nav-link {
-  font-family: inherit;
   font-size: inherit;
-  color: inherit;
+
   font-weight: 500;
-  text-decoration: none;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -54,11 +53,10 @@ body {
   color: var(--accenTextColor);
 }
 .contact-link {
-  font-family: inherit;
   font-weight: 500;
   font-size: inherit;
   color: var(--colorSecondText);
-  text-decoration: none;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -79,7 +77,6 @@ body {
   letter-spacing: 0.06em;
 }
 .hero-button {
-  font-family: inherit;
   color: var(--backgroundColorText);
   font-size: 16;
   border: none;
@@ -139,12 +136,9 @@ body {
 .address-link {
   font-style: normal;
   color: var(--colorTextInFooter);
-  text-decoration: none;
 }
 /* Portfolio */
 .filter-button {
-  font-family: inherit;
-  color: inherit;
   font-size: 16;
   border: none;
   background-color: var(--colorStrokeHeader);
