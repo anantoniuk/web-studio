@@ -20,7 +20,14 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.container {
+  max-width: 1200px;
+  padding: 0px 15px 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* лого */
+
 .logo-contrast {
   font-family: var(--textLogo);
   font-weight: 700;
@@ -41,6 +48,9 @@ body {
   color: var(--backgroundColorText);
 }
 /* nav */
+.header {
+  padding: 25px 0px 25px 0px;
+}
 .nav-link {
   font-size: inherit;
 
@@ -66,6 +76,7 @@ body {
 /* hero */
 .hero {
   background-color: var(--backgroundDarkColorText);
+  padding: 200px 0px 200px 0px;
 }
 .hero-title {
   font-size: 44px;
@@ -93,6 +104,9 @@ body {
   cursor: pointer;
 }
 /* advantages */
+.advantages {
+  padding: 95px 0px 95px 0px;
+}
 .advantages-title {
   font-weight: 700;
   line-height: 1.14;
@@ -101,6 +115,9 @@ body {
   color: var(--colorSecondText);
 }
 /* work */
+.work {
+  padding-bottom: 95px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -109,6 +126,7 @@ body {
 /* team */
 .team {
   background-color: var(--colorStrokeHeader);
+  padding: 95px 0px 95px 0px;
 }
 .team-title {
   font-weight: 700;
@@ -128,6 +146,7 @@ body {
 /* footer */
 .footer {
   background-color: var(--backgroundDarkColorText);
+  padding: 60px 0px 60px 0px;
 }
 .address {
   font-style: normal;
@@ -138,6 +157,9 @@ body {
   color: var(--colorTextInFooter);
 }
 /* Portfolio */
+.Portfolio {
+  padding: 95px 0px 95px 0px;
+}
 .filter-button {
   font-size: 16;
   border: none;
