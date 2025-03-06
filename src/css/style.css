@@ -53,17 +53,13 @@ body {
 }
 .header-container {
   display: flex;
-  max-width: 1170px;
-  gap: 30px;
-  justify-content: space-evenly;
-  align-items: baseline;
-  flex-wrap: wrap;
+  gap: 93px;
+  /* justify-content: space-evenly; */
+  align-items: center;
 }
 .nav-list {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  max-width: 281px;
+  gap: 50px;
 }
 .nav-link {
   font-size: inherit;
@@ -78,9 +74,7 @@ body {
 }
 .contact-list {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  max-width: 307px;
+  gap: 50px;
 }
 .contact-link {
   font-weight: 500;
@@ -100,33 +94,34 @@ body {
 }
 .hero-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 696px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 .hero-title {
+  display: flex;
+  max-width: 696px;
   font-size: 44px;
   font-weight: 900;
   color: var(--backgroundColorText);
   line-height: 1.36;
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
 }
 .hero-button {
   color: var(--backgroundColorText);
-  font-size: 16;
+  font-size: 16px;
+  font-weight: 700;
   border: none;
   background-color: var(--accenTextColor);
   padding: 10px 32px;
   border-radius: 4px;
-  line-height: 1.9;
+  line-height: 1.87;
   letter-spacing: 0.06em;
 }
 .hero-button:hover {
   color: var(--accenTextColor);
-  border: 3px solid var(--accenTextColor);
+  /* border: 3px solid var(--accenTextColor); */
   background-color: var(--backgroundColorText);
   cursor: pointer;
 }
@@ -137,8 +132,7 @@ body {
 .advantages-list {
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
-  gap: 15;
+  gap: 30px;
 }
 .advantages-title {
   font-weight: 700;
@@ -160,6 +154,7 @@ body {
 .work-list {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 /* team */
 .team {
@@ -176,9 +171,18 @@ body {
 .team-list {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 .teammate {
   background: var(--backgroundColorText);
+  border-radius: 4px;
+}
+.teammate-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0;
 }
 .teammate-name {
   font-weight: 500;
