@@ -226,8 +226,18 @@ body {
   flex-direction: column;
 }
 /* Portfolio */
-.Portfolio {
+.portfolio {
   padding: 95px 0px 95px 0px;
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 .filter-button {
   font-size: 16;
@@ -242,6 +252,11 @@ body {
   color: var(--backgroundColorText);
   background-color: var(--accenTextColor);
   cursor: pointer;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .project-title {
   font-weight: 700;
