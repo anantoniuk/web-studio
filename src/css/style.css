@@ -55,8 +55,10 @@ body {
 .header-container {
   display: flex;
   gap: 93px;
-  justify-content: space-between;
   align-items: center;
+}
+.nav {
+  flex-grow: 2;
 }
 .nav-list {
   display: flex;
@@ -134,8 +136,11 @@ body {
 }
 .advantages-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
+}
+.advantages-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .advantages-meta {
   display: flex;
@@ -161,8 +166,11 @@ body {
 }
 .work-list {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
+  flex-wrap: wrap;
+}
+.work-item {
+  flex-basis: calc((100% - 60px) / 4);
 }
 /* team */
 .team {
@@ -178,8 +186,12 @@ body {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
+}
+.team-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .teammate {
   background: var(--backgroundColorText);
@@ -259,11 +271,23 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+.gallery-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.project {
+  outline: 1px solid var(--colorStroke);
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 24px;
 }
 .project-category {
   font-size: 16px;
