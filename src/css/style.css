@@ -147,6 +147,30 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+.advantages-title::before {
+  content: "";
+  display: block;
+  background-color: var(--colorStrokeHeader);
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.photo-antenna::before {
+  background-image: url(../img/antenna.svg);
+}
+.photo-clock::before {
+  background-image: url(../img/clock.svg);
+}
+
+.photo-diagram::before {
+  background-image: url(../img/diagram.svg);
+}
+
+.photo-astronaut::before {
+  background-image: url(../img/astronaut.svg);
+}
 .advantages-title {
   font-weight: 700;
   line-height: 1.14;
