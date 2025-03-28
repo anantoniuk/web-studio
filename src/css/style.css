@@ -147,11 +147,11 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.advantages-title::before {
+.advantages-item::before {
   content: "";
   display: block;
   background-color: var(--colorStrokeHeader);
-  width: 270px;
+  border-radius: 4px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
