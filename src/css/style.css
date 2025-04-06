@@ -90,7 +90,12 @@ body {
 /* hero */
 .hero {
   background-color: var(--backgroundDarkColorText);
-  background-image: url(../img/hero-bg.webp);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0px 200px 0px;
