@@ -1,4 +1,5 @@
 :root {
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~color~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
   --colorTextPrimary: #212121;
   --colorSecondText: #757575;
   --accenTextColor: #2196f3;
@@ -8,10 +9,13 @@
   --logoColor: #000000;
   --colorStrokeHeader: #f5f4fa;
   --colorTextInFooter: #ffffff99;
-  /* шрифти */
+  --colorIcon: #afb1b8;
+  --colorIconImFooter: rgba(255, 255, 255, 0.1);
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~font~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
   --textPrimary: "Roboto", serif;
   --textLogo: "Raleway", serif;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 body {
   font-family: var(--textPrimary);
   font-weight: 400;
@@ -26,7 +30,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* лого */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~logo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
 .logo-contrast {
   font-family: var(--textLogo);
@@ -47,7 +51,7 @@ body {
 .logo-white {
   color: var(--backgroundColorText);
 }
-/* nav */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .header {
   padding: 25px 0px 25px 0px;
   border-bottom: 1px solid var(--colorStroke);
@@ -83,11 +87,25 @@ body {
   color: var(--colorSecondText);
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .contact-link:hover {
   color: var(--accenTextColor);
 }
-/* hero */
+.contact-icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+.contact-icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+.contact-link:hover .contact-icon {
+  fill: var(--accenTextColor);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~hero~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .hero {
   background-color: var(--backgroundDarkColorText);
   background-image: linear-gradient(
@@ -136,7 +154,7 @@ body {
   background-color: var(--backgroundColorText);
   cursor: pointer;
 }
-/* advantages */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~advantages~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .advantages {
   padding: 95px 0px 95px 0px;
 }
@@ -184,7 +202,7 @@ body {
 .advantages-text {
   color: var(--colorSecondText);
 }
-/* work */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~work~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .work {
   padding-bottom: 95px;
 }
@@ -202,7 +220,7 @@ body {
 .work-item {
   flex-basis: calc((100% - 60px) / 4);
 }
-/* team */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~team~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .team {
   background-color: var(--colorStrokeHeader);
   padding: 95px 0px 95px 0px;
@@ -234,7 +252,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .teammate-name {
   font-weight: 500;
@@ -245,12 +263,82 @@ body {
   font-size: 16px;
   color: var(--colorSecondText);
 }
-/* footer */
+.social-networks-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding-bottom: 30px;
+}
+.social-networks-link {
+  padding: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-networks-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--colorIcon);
+}
+.social-networks-link:hover {
+  background-color: var(--accenTextColor);
+}
+.social-networks-link:hover .social-networks-icon {
+  fill: var(--backgroundColorText);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~regular-customers~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.regular-customers {
+  padding: 94px 0;
+}
+.regular-customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.regular-customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.regular-customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  outline: 1px solid var(--colorIcon);
+  border-radius: 4px;
+}
+.regular-customer-logo {
+  width: 106px;
+  height: 60px;
+  fill: var(--colorIcon);
+}
+.regular-customer-link:hover {
+  outline: 1px solid var(--accenTextColor);
+}
+.regular-customer-link:hover .regular-customer-logo {
+  fill: var(--accenTextColor);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .footer {
   background-color: var(--backgroundDarkColorText);
   padding: 60px 0px 60px 0px;
 }
 .footer-container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+.footer-contact {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -270,7 +358,28 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* Portfolio */
+.social-networks-footer-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--backgroundColorText);
+  line-height: 1.14;
+}
+.footer .social-networks-list {
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+.footer .social-networks-link {
+  background-color: var(--colorIconImFooter);
+}
+.footer .social-networks-icon {
+  fill: var(--backgroundColorText);
+}
+.footer .social-networks-link:hover {
+  background-color: var(--accenTextColor);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~portfolio~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .portfolio {
   padding: 95px 0px 95px 0px;
 }

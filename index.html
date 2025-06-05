@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <header class="header">
       <div class="container header-container">
         <a class="logo-contrast" href="./index.html"
@@ -36,8 +37,8 @@
               <a class="nav-link" href="./index.html">Студіо</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./src/pages/portfolio.html"
-                >Портфоліо</a
+              <a class="nav-link" href="./src/pages/portfolio.html">
+                Портфоліо</a
               >
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
@@ -46,24 +47,32 @@
         <ul class="contact-list">
           <li class="contact-item">
             <a class="contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg class="contact-icon contact-icon-envelope">
+                <use href="/src/img/header-icon.svg#icon-envelope" />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contact-item">
             <a class="contact-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              ><svg class="contact-icon contact-icon-smartphone">
+                <use href="/src/img/header-icon.svg#icon-smartphone" />
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
     </header>
     <main class="main">
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~hero~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button">Замовити послугу</button>
         </div>
       </section>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~adventages~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <section class="advantages">
         <div class="container">
           <h2 hidden class="advantages-title">Переваги</h2>
@@ -107,6 +116,7 @@
           </ul>
         </div>
       </section>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~work~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <section class="work">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
@@ -135,10 +145,12 @@
           </ul>
         </div>
       </section>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~team~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
+            <!-- 01 -->
             <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
@@ -154,8 +166,49 @@
                   <h3 class="teammate-name">Ігор Дем'яненко</h3>
                   <p class="teammate-role">Product Designer</p>
                 </div>
+                <div class="social-networks">
+                  <ul class="social-networks-list">
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-linkedin"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </article>
             </li>
+            <!-- 02 -->
             <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
@@ -171,8 +224,49 @@
                   <h3 class="teammate-name">Ольга Рєпіна</h3>
                   <p class="teammate-role">Frontend Developer</p>
                 </div>
+                <div class="social-networks">
+                  <ul class="social-networks-list">
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-linkedin"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </article>
             </li>
+            <!-- 03 -->
             <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
@@ -188,8 +282,49 @@
                   <h3 class="teammate-name">Микола Тарасов</h3>
                   <p class="teammate-role">Marketing</p>
                 </div>
+                <div class="social-networks">
+                  <ul class="social-networks-list">
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-linkedin"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </article>
             </li>
+            <!-- 04 -->
             <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
@@ -205,24 +340,152 @@
                   <h3 class="teammate-name">Михайло Єрмаков</h3>
                   <p class="teammate-role">UI Designer</p>
                 </div>
+                <div class="social-networks">
+                  <ul class="social-networks-list">
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks-item">
+                      <a class="social-networks-link" href="#"
+                        ><svg class="social-networks-icon">
+                          <use
+                            href="/src/img/social-networks.svg#icon-linkedin"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~regular-customers~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <section class="regular-customers">
+        <div class="container">
+          <h2 class="regular-customers-title">Постійні клієнти</h2>
+          <ul class="regular-customers-list">
+            <li class="regular-customer- item">
+              <a class="regular-customer-link" href="#"
+                ><svg class="regular-customer-logo">
+                  <use href="/src/img/company.svg#logo-1" />
+                </svg>
+              </a>
+            </li>
+            <li class="regular-customer-item">
+              <a class="regular-customer-link" href="#"
+                ><svg class="regular-customer-logo">
+                  <use href="/src/img/company.svg#logo-2" />
+                </svg>
+              </a>
+            </li>
+            <li class="regular-customer-item">
+              <a class="regular-customer-link" href="#"
+                ><svg class="regular-customer-logo">
+                  <use href="/src/img/company.svg#logo-3" />
+                </svg>
+              </a>
+            </li>
+            <li class="regular-customer-item">
+              <a class="regular-customer-link" href="#"
+                ><svg class="regular-customer-logo">
+                  <use href="/src/img/company.svg#logo-4" />
+                </svg>
+              </a>
+            </li>
+            <li class="regular-customer-item">
+              <a class="regular-customer-link" href="#"
+                ><svg class="regular-customer-logo">
+                  <use href="/src/img/company.svg#logo-5" />
+                </svg>
+              </a>
+            </li>
+            <li class="regular-customer-item">
+              <a class="regular-customer-link" href="#"
+                ><svg class="regular-customer-logo">
+                  <use href="/src/img/company.svg#logo-6" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <footer class="footer">
       <div class="container footer-container">
-        <a class="logo-contrast" href="#"
-          >Web<span class="logo-white">Studio</span></a
-        >
-        <address class="address-list">
-          <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-          <a class="address-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+        <div class="footer-contact">
+          <a class="logo-contrast" href="#"
+            >Web<span class="logo-white">Studio</span></a
           >
-          <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+          <address class="address-list">
+            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+            <a class="address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="address-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
+        <div class="social-networks-footer">
+          <h2 class="social-networks-footer-title">приєднуйтесь</h2>
+          <ul class="social-networks-list">
+            <li class="social-networks-item">
+              <a class="social-networks-link" href="#"
+                ><svg class="social-networks-icon">
+                  <use href="/src/img/social-networks.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a class="social-networks-link" href="#"
+                ><svg class="social-networks-icon">
+                  <use href="/src/img/social-networks.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a class="social-networks-link" href="#"
+                ><svg class="social-networks-icon">
+                  <use href="/src/img/social-networks.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a class="social-networks-link" href="#"
+                ><svg class="social-networks-icon">
+                  <use href="/src/img/social-networks.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
