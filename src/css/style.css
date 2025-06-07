@@ -94,6 +94,9 @@ body {
 .contact-link:hover {
   color: var(--accenTextColor);
 }
+.contact-icon {
+  fill: var(--colorSecondText);
+}
 .contact-icon-envelope {
   width: 16px;
   height: 12px;
