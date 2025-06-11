@@ -25,3 +25,7 @@ ul {
   list-style: none;
   font-family: inherit;
 }
+img {
+  display: block;
+  width: 100%;
+}
