@@ -69,8 +69,98 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="btn-close" data-modal-close>
+              <svg class="icon-close">
+                <use href="./src/img/form-icon.svg#icon-close" />
+              </svg>
+            </button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal-form">
+              <div class="modal-fields">
+                <!-- 01 -->
+                <div class="form-content">
+                  <label class="form-label" for="name">Ім'я</label>
+                  <div class="form-field">
+                    <svg class="form-icon">
+                      <use href="./src/img/form-icon.svg#icon-person" />
+                    </svg>
+                    <input
+                      class="form-input"
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      minlength="3"
+                    />
+                  </div>
+                </div>
+                <!-- 02 -->
+                <div class="form-content">
+                  <label class="form-label" for="tel">Телефон</label>
+                  <div class="form-field">
+                    <svg class="form-icon">
+                      <use href="./src/img/form-icon.svg#icon-phone" />
+                    </svg>
+                    <input
+                      class="form-input"
+                      id="tel"
+                      name="tel"
+                      type="tel"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- 03 -->
+                <div class="form-content">
+                  <label class="form-label" for="email">Пошта</label>
+                  <div class="form-field">
+                    <svg class="form-icon">
+                      <use href="./src/img/form-icon.svg#icon-email" />
+                    </svg>
+                    <input
+                      class="form-input"
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- 04 -->
+                <div class="form-content">
+                  <label class="form-label" for="comment">Коментар</label>
+                  <div class="form-field comment-field">
+                    <textarea
+                      class="form-comment"
+                      name="comment"
+                      id="comment"
+                      placeholder="Введіть текст"
+                      minlength="10"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="agree">
+                <input required class="agree-btn" type="checkbox" />
+                <p class="agree-text">
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="agree-link" href="#">Умови договору</a>
+                </p>
+              </div>
+              <div class="modal-meta">
+                <button class="modal-button" type="submit">Відправити</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       </section>
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~adventages~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <section class="advantages">
@@ -492,7 +582,34 @@
             </li>
           </ul>
         </div>
+        <div class="follow">
+          <form class="follow-form">
+            <div class="follow-content">
+              <label class="follow-label" for="follow_email"
+                >Підпишіться на розсилку</label
+              >
+              <div class="follow-meta">
+                <div class="follow-box">
+                  <input
+                    required
+                    class="follow-input"
+                    name="follow_email"
+                    id="follow_email"
+                    type="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <button class="follow-btn" type="submit">
+                  Підписатися<svg class="follow-icon">
+                    <use href="./src/img/form-icon.svg#icon-send" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
