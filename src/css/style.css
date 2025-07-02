@@ -14,6 +14,9 @@
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~font~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
   --textPrimary: "Roboto", serif;
   --textLogo: "Raleway", serif;
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~transition~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  --hoverCubic: (0.4, 0, 0.2, 1);
+  --hoverTimeCubic: 250ms;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 body {
@@ -76,8 +79,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
-.nav-link::after {
+.nav-link::after,
+.choice::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -86,12 +91,15 @@ body {
   left: 0;
   bottom: -28px;
   border-radius: 4px;
-  opacity: 0;
+  transform: scale(0);
+  transition: transform var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
-.nav-link:hover::after {
-  opacity: 1;
+.nav-link:hover::after,
+.choice::after {
+  transform: scale(1);
 }
-.nav-link:hover {
+.nav-link:hover,
+.choice {
   color: var(--accenTextColor);
 }
 .contact-list {
@@ -107,12 +115,14 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: color var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .contact-link:hover {
   color: var(--accenTextColor);
 }
 .contact-icon {
   fill: var(--colorSecondText);
+  transition: fill var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .contact-icon-envelope {
   width: 16px;
@@ -167,6 +177,9 @@ body {
   letter-spacing: 0.06em;
   border: 3px solid transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: color, border, background-color;
+  transition-duration: var(--hoverTimeCubic);
+  transition-timing-function: var(--hoverCubic);
 }
 .hero-button:hover {
   color: var(--accenTextColor);
@@ -218,6 +231,7 @@ body {
   width: 18px;
   height: 18px;
   fill: var(--logoColor);
+  transition: fill var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .modal-title {
   font-weight: 700;
@@ -250,6 +264,7 @@ body {
   display: flex;
   align-items: center;
   column-gap: 12px;
+  transition: border-color var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .form-field:hover .form-icon,
 .form-field:hover,
@@ -272,6 +287,7 @@ body {
   width: 18px;
   height: 18px;
   fill: var(--colorTextPrimary);
+  transition: fill var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .agree {
   display: flex;
@@ -449,11 +465,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .social-networks-icon {
   width: 20px;
   height: 20px;
   fill: var(--colorIcon);
+  transition: fill var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .social-networks-link:hover {
   background-color: var(--accenTextColor);
@@ -486,11 +504,13 @@ body {
   padding: 16px 32px;
   outline: 1px solid var(--colorIcon);
   border-radius: 4px;
+  transition: outline var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .regular-customer-logo {
   width: 106px;
   height: 60px;
   fill: var(--colorIcon);
+  transition: fill var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .regular-customer-link:hover {
   outline: 1px solid var(--accenTextColor);
@@ -545,6 +565,7 @@ body {
 }
 .footer .social-networks-link {
   background-color: var(--colorIconImFooter);
+  transition: background-color var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .footer .social-networks-icon {
   fill: var(--backgroundColorText);
@@ -618,6 +639,9 @@ body {
   border-radius: 4px;
   line-height: 1.6;
   letter-spacing: inherit;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--hoverTimeCubic);
+  transition-timing-function: var(--hoverCubic);
 }
 .filter-button:hover {
   color: var(--backgroundColorText);
@@ -636,6 +660,7 @@ body {
 }
 .project {
   outline: 1px solid var(--colorStroke);
+  transition: box-shadow var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .project:hover {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
@@ -656,7 +681,7 @@ body {
   background-color: hsla(207, 90%, 54%, 0.9);
   padding: 63px 24px;
   transform: translateY(101%);
-  transition: transform 1s ease;
+  transition: transform var(--hoverTimeCubic) var(--hoverTimeCubic);
 }
 .text-project-overlay {
   font-size: 18px;
