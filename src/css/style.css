@@ -40,8 +40,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--accenTextColor);
-
   line-height: 1.154;
+}
+.logo-contrast:hover {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
 }
 .logo {
   font-family: var(--textLogo);
